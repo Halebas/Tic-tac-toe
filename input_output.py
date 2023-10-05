@@ -9,4 +9,10 @@ def input_coordinates(field, player: str):
 
 
 def print_field(field):
-    print(field)
+    for line in field:
+        for cell in line:
+            if cell:
+                print(cell, end=" ")
+            else:
+                print(".", end=" ")
+        print()
